@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server",
+    "build": "babel src -d public --source-maps --extensions \".js,.ts\"",
+    "start": "node index.js",
+    "test": "jest --coverage test/SalesRepService.test.js "
+  },
+  "author": "dev",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.16.1",
+    "express": "^4.19.2",
+    "supertest": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "dotenv": "^16.4.5",
+    "jest": "^29.7.0",
+    "prisma": "^5.16.1"
+  }
+}
